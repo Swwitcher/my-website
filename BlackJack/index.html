@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>BlackJack</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="init()">
+    <h1>BlackJack</h1>
+    <hr>
+    <p>
+        Votre argent : <span id="argentJoueur"></span> Celui de la banque : <span id="argentBanque"></span>
+    </p>
+    <div class="banque" id="banque">
+        <h2>
+            Les cartes de la banque
+        </h2>
+        <p>
+            Niveau de la banque : <span></span>
+        </p>
+    </div>
+    <div class="joueur" id="joueur">
+        <h2>
+            Vos cartes
+        </h2>
+        <p>
+            Votre niveau : <span></span> <button onclick="newCard('joueur')">Nouvelle carte</button> <button onclick="stop()">Arreter</button>
+        </p>
+    </div>
+</body>
+</html>

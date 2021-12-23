@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meteo</title>
+  <script src="weather.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css"
+    type="text/css">
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" id="input" type="text" placeholder="Nom de ville" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="getInput()">Rechercher</button>
+    </form>
+  </nav>
+  <div id="map" class="map"></div>
+  <div class="dropdown dropend p-4">
+    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown">
+      Choisir le jour
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" onclick="displayCurrent()">Meteo actuelle</a></li>
+      <li><a class="dropdown-item" onclick="displayJ('0')">Meteo d'aujourd'hui</a></li>
+      <li><a class="dropdown-item" onclick="displayJ('1')">Meteo de demain</a></li>
+      <li><a class="dropdown-item" onclick="displayJ('2')">Meteo d'apres demain</a></li>
+      <li><a class="dropdown-item" onclick="displayJ('3')">Meteo dans 3 jours</a></li>
+      <li><a class="dropdown-item" onclick="displayJ('4')">Meteo dans 4 jours</a></li>
+    </ul>
+  </div>
+  <div hidden id="affichage" class="card shadow-0 border align-items-center">
+    <div class="card-body p-4">
+
+      <h4 class="mb-1 sfw-normal" id="ville"></h4>
+      <p>Date: <strong id="date"></strong></p>
+      <p>Temperature: <span id="temperature"></span></p>
+
+      <div class="d-flex flex-row align-items-center">
+        <p class="mb-0 me-4" id="condition"></p>
+        <i class="fas fa-cloud fa-3x" style="color: #eee;"></i>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+<footer>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://prevision-meteo.ch/">https://prevision-meteo.ch/</a>
+  </div>
+</footer>
+
+</html>

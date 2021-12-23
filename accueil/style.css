@@ -38,10 +38,6 @@ body {
     cursor: pointer;
 }
 
-.git {
-    cursor: no-drop;
-}
-
 .bouton:hover {
     background-color: #3b424c;
 }
