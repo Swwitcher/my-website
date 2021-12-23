@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #91a3bd;
+    background-color: #30363e;
 }
 
 .liste {
-    background-color: #4b5460;
+    background-color: #3c434d;
     justify-content: space-around;
     align-items: center;
     display: flex;
@@ -39,7 +39,7 @@ body {
 }
 
 .bouton:hover {
-    background-color: #3b424c;
+    background-color: #2f353d;
 }
 
 .container {
@@ -50,7 +50,7 @@ body {
 }
 
 .horizontal {
-    background-color: #707e92;
+    background-color: #576373;
     margin-top: 20px;
     flex-direction: row;
     border-radius: 25px;

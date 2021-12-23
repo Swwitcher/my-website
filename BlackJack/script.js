@@ -14,7 +14,8 @@ function init() {
     var joueur = document.getElementById("joueur")
     joueur.getElementsByTagName("span")[0].innerHTML = scoreJoueur
     newCard('banque')
-    newCard('banque')
+    newCard('joueur')
+    newCard('joueur')
 }
 
 function updateScore(joueur, val) {
