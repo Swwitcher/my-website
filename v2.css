@@ -27,12 +27,6 @@ header {
     background-color: #0a192f;
 }
 
-.liste-header li a span {
-    margin-right: 5px;
-    color: #64ffda;
-    font-size: 15px;
-    text-align: right;
-}
 
 .liste-header {
     justify-content: right;
@@ -50,6 +44,13 @@ header {
     text-decoration: none;
     font-size: 15px;
     color: #ccd6f6;
+}
+
+.liste-header li a span {
+    margin-right: 5px;
+    color: #64ffda;
+    font-size: 15px;
+    text-align: right;
 }
 
 .liste-header li a:hover {
@@ -95,7 +96,7 @@ header {
 }
 
 .liste-sidenav li a img:hover {
-    top: -5px;
+    top: -3px;
 }
 
 .github-logo {
@@ -123,19 +124,26 @@ main {
     flex-direction: column;
 }
 
+.vertical {
+    display: flex;
+    flex-direction: row;
+}
+
 .part {
-    padding: 50px;
+    padding: 100px;
+}
+
+
+.accueil {
+    padding-top: 200px;
+    padding-bottom: 300px;
 }
 
 .part p {
     padding-top: 20px;
     color: #8892b0;
     max-width: 500px;
-}
-
-.accueil {
-    padding-top: 200px;
-    padding-bottom: 300px;
+    font-size: 20px;
 }
 
 .part h1 {
@@ -165,6 +173,48 @@ main {
     text-align: right;
 }
 
+.part a {
+    text-decoration: none;
+    color: #64ffda;
+    display: inline-block;
+    position: relative;
+}
+
+.part a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #64ffda;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.part a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.part li {
+    padding: 13px;
+    list-style-type: none;
+    color: #8892b0;
+}
+
+.part li::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-size: 8px;
+    background-image: url("img-v2/triangle.png");
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
 footer {
     grid-column: span 3;
     padding: 30px;
@@ -177,30 +227,7 @@ footer a {
 }
 
 @media screen and (max-width: 1150px) {
-    .container-grille {
-        display: flex;
+    .vertical {
         flex-direction: column;
-    }
-
-    .liste-sidenav {
-        
-        flex-direction: row;
-        justify-content: left;
-    }
-
-    .liste-sidenav li {
-        margin: 0 20px;
-    }
-
-    .liste-sidenav::before {
-        width: 0px;
-        height: 0px;
-    }
-
-    main {
-        min-height: 600px;
-    }
-
-    footer {
     }
 }
