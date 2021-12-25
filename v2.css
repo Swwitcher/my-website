@@ -115,6 +115,14 @@ header {
     content: url("img-v2/linkedin-hover.png");
 }
 
+.external-link {
+    content: url("img-v2/external-link.png");
+}
+
+.external-link:hover {
+    content: url("img-v2/external-link-hover.png");
+}
+
 main {
     padding: 20px;
 }
@@ -128,6 +136,64 @@ main {
     display: flex;
     flex-direction: row;
     padding: 100px;
+}
+
+.grille {
+    padding: 20px;
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 15px;
+}
+
+.grille-item {
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    background-color: #112240;
+    box-shadow: 5px 10px 5px #051326;
+}
+
+.grille-item img {
+    margin-top: 10px;
+    margin-left: 258px;
+    width: 32px;
+}
+
+.grille-item a {
+    text-decoration: none;
+    color: #ccd6f6;
+}
+
+.grille-item a:hover {
+    color: #64ffda;
+}
+
+.grille-item h1 {
+    margin-top: 0px;
+    margin-left: 15px;
+    font-size: 20px !important;
+}
+
+.grille-item p {
+    margin-left: 15px;
+    font-size: 16px !important;
+}
+
+.grille-item li {
+    display: inline !important;
+    margin: 5px;
+    color: #677291 !important;
+}
+
+.grille-item li::before {
+    background-image: none !important;
+    margin-right: 0px !important;
+}
+
+.grille-item:hover {
+    margin-top: -5px;
 }
 
 .accueil {
@@ -211,14 +277,14 @@ main {
     text-align: right;
 }
 
-.part a {
+.part p a {
     text-decoration: none;
     color: #64ffda;
     display: inline-block;
     position: relative;
 }
 
-.part a::after {
+.part p a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -268,4 +334,8 @@ footer a {
     .vertical {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 900px) {
+    
 }
