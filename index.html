@@ -1,128 +1,280 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
-    <title>Accueil</title>
+    <title>Theo EL HOULALI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="liste">
-        <a href="/accueil/accueil.html">
-            <div class="bouton" ><img src="/img/home.png" alt="Accueil" class="home"></div>
-        </a>
-        <a href="https://www.linkedin.com/in/telhoulali/">
-            <div class="bouton"><img src="/img/linkedin.png" alt="LinkedIn" class="linkedin"></div>
-        </a>
-        <a href="https://github.com/Swwitcher">
-            <div class="bouton"><img src="/img/github.png" alt="GitHub" class="github"></div>
-        </a>
-    </div>
-    <div class="container vertical">
-        <div class="container horizontal">
-            <div class="element apercu">
-                <div class="container vertical">
-                    <div class="element title">
-                        <h1>Meteo</h1>
+    <div class="container-grille">
+        <header>
+            <nav>
+                <ul class="liste-header">
+                    <li><a href="#moi"><span>01.</span>A propos de moi</a></li>
+                    <li><a href="#formation"><span>02.</span>Formation</a></li>
+                    <li><a href="#projet-perso"><span>03.</span>Projets perso</a></li>
+                    <li><a href="#projet-universite"><span>04.</span>Projets universitaires</a></li>
+                    <li><a href="#contact"><span>05.</span>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <nav>
+            <ul class="liste-sidenav">
+                <li><a href="https://github.com/Swwitcher"><img class="github-logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/telhoulali/"><img class="linkedin-logo"></a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="container-main">
+                <div class="vertical">
+                    <div class="part accueil">
+                        <h4>Bonjour, je suis</h4>
+                        <h1>Théo EL HOULALI</h1>
+                        <h2>Étudiant en Informatique</h2>
+                        <p>Je suis un étudiant informatique en deuxième année de Master option Génie Logiciel à l'Université de Bordeaux.</p>
                     </div>
-                    <div class="element image">
-                        <a href="Meteo/index.html">
-                            <img src="img/meteo.png" alt="Meteo" class="screen">
-                        </a>
+                </div>
+                <div class="vertical">
+                    <div class="part" id="moi">
+                        <h3>
+                            <span>01.</span>A propos de moi
+                        </h3>
+                        <p>
+                            Salut ! Je m'appelle Théo et j'ai toujours aimé créer toute sorte de choses. Depuis que j'ai découvert l'informatique, je peux enfin faire ce qui me passe par la tête. Vous verez quelques exemples dans la partie sur mes <a href="#projet-perso">projets personnels</a> !
+                        </p>
+                        <p>
+                            TODO
+                        </p>
+                    </div>
+                    <div class="part">
+                        <img src="img/filtre.jpg" class="filtre">
+                        <img src="img/photo.jpg" class="photo">
+                        <div class="carre"></div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="part" id="formation">
+                        <h3>
+                            <span>02.</span>Ma formation
+                        </h3>
+                        <p>
+                            J'ai commencé l'informatique avec le début de ma licence en 2017 à l'Université de Bordeaux avec du python pour découvrir les bases. Nous avons ensuite découvert le C, langage avec le quel j'ai pu apprendre l'algorithmique. Viens ensuite lors de ma L3 ma rencontre avec la programmation orientée objet, et plus précisement le Java ! À travers différents cours, j'apprends le DDD et les design patterns.
+                        </p>
+                        <p>
+                            Vient la première année de master, où je choisis la spécialisation Génie Logiciel. Master durant le quel j'ai pu apprendre la programmation parallèle, le big data, la programmation web, mais aussi durant le quel j'ai effectué des projets de groupe et appris à les gérer à l'aide de plusieurs méthodes et de différentes manières.
+                        </p>
+                    </div>
+                    <div class="part">
+                        <h3>
+                            Compétences acquises
+                        </h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>HTML/CSS</li>
+                            <li>Javascript</li>
+                            <li>React</li>
+                            <li>Unity3D</li>
+                            <li>Git</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="part" id="projet-perso">
+                        <h3>
+                            <span>03.</span>Mes projets perso
+                        </h3>
+                        <div class="grille">
+                            <div class="grille-item">
+                                <a href="Chess/">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="Chess/">Chess</a></h1>
+                                <p>Site d'echec solo fait pour blabla</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="Pong/">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="Pong/">Pong</a></h1>
+                                <p>Site d'echec solo fait pour blabla</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="">SplitBros</a></h1>
+                                <p>Site d'echec solo fait pour blabla</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="">Lorem</a></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora eaque veritatis velit vero consequuntur corporis eum vel officiis laboriosam esse nemo est quas, libero perferendis nostrum fugiat! Consectetur, mollitia.</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="part" id="projet-universite">
+                        <h3>
+                            <span>04.</span>Mes projets universitaires
+                        </h3>
+                        <div class="grille">
+                            <div class="grille-item">
+                                <a href="BlackJack/">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="BlackJack/">Blackjack</a></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora eaque veritatis velit vero consequuntur corporis eum vel officiis laboriosam esse nemo est quas, libero perferendis nostrum fugiat! Consectetur, mollitia.</p>
+                                <footer>
+                                    <ul>
+                                        <li>HTML/CSS</li>
+                                        <li>JS</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="Meteo/">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="Meteo/">Application météo</a></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora eaque veritatis velit vero consequuntur corporis eum vel officiis laboriosam esse nemo est quas, libero perferendis nostrum fugiat! Consectetur, mollitia.</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="">PostFlex</a></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora eaque veritatis velit vero consequuntur corporis eum vel officiis laboriosam esse nemo est quas, libero perferendis nostrum fugiat! Consectetur, mollitia.</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="">QRcode dynamique</a></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora eaque veritatis velit vero consequuntur corporis eum vel officiis laboriosam esse nemo est quas, libero perferendis nostrum fugiat! Consectetur, mollitia.</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="">Puzzle</a></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora eaque veritatis velit vero consequuntur corporis eum vel officiis laboriosam esse nemo est quas, libero perferendis nostrum fugiat! Consectetur, mollitia.</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="">Age of Empire like</a></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora eaque veritatis velit vero consequuntur corporis eum vel officiis laboriosam esse nemo est quas, libero perferendis nostrum fugiat! Consectetur, mollitia.</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="">Robot traqueur</a></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora eaque veritatis velit vero consequuntur corporis eum vel officiis laboriosam esse nemo est quas, libero perferendis nostrum fugiat! Consectetur, mollitia.</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="grille-item">
+                                <a href="">
+                                    <img class="external-link">
+                                </a>
+                                <h1 class="grille-titre"><a href="">Plant&Moi</a></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempora eaque veritatis velit vero consequuntur corporis eum vel officiis laboriosam esse nemo est quas, libero perferendis nostrum fugiat! Consectetur, mollitia.</p>
+                                <footer>
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>Test</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="part" id="contact">
+                        <h3>
+                            <span>05.</span>Me contacter
+                        </h3>
+                        <p>
+                            Si vous souhaitez me contacter vous pouvez m'envoyer un mail à <a href="mailto:theoelhoulali@live.fr">theoelhoulali@live.fr</a>
+                        </p>
+                        <p>
+                            Ou m'envoyer un message sur mon <a href="https://www.linkedin.com/in/telhoulali/">LinkedIn</a>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="element description">
+        </main>
+        <aside></aside>
+        <footer>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam repudiandae assumenda dolore fuga ipsum hic amet? Aliquid eaque, consectetur ducimus, officiis recusandae voluptatem blanditiis sint tempora expedita quaerat dicta?
-                    Molestias labore eligendi dolores in! Totam ad iure suscipit neque libero qui ex vel eum commodi assumenda, deserunt autem, itaque rerum vero quo laudantium, amet nemo? Voluptates obcaecati aut delectus.
-                    Animi molestiae officiis nobis est quo officia unde. Iste quod repellendus voluptatem laudantium tempora repellat quae molestias itaque consequatur veritatis nam rerum ratione enim, dolorum ipsa est laboriosam impedit nobis.
-                </p>
-            </div>
-        </div>
-        <div class="container horizontal">
-            <div class="element apercu">
-                <div class="container vertical">
-                    <div class="element title">
-                        <h1>BlackJack</h1>
-                    </div>
-                    <div class="element image">
-                        <a href="BlackJack/index.html">
-                            <img src="img/blackjack.png" alt="Meteo" class="screen">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="element description">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam repudiandae assumenda dolore fuga ipsum hic amet? Aliquid eaque, consectetur ducimus, officiis recusandae voluptatem blanditiis sint tempora expedita quaerat dicta?
-                    Molestias labore eligendi dolores in! Totam ad iure suscipit neque libero qui ex vel eum commodi assumenda, deserunt autem, itaque rerum vero quo laudantium, amet nemo? Voluptates obcaecati aut delectus.
-                    Animi molestiae officiis nobis est quo officia unde. Iste quod repellendus voluptatem laudantium tempora repellat quae molestias itaque consequatur veritatis nam rerum ratione enim, dolorum ipsa est laboriosam impedit nobis.
-                </p>
-            </div>
-        </div>
-        <div class="container horizontal">
-            <div class="element apercu">
-                <div class="container vertical">
-                    <div class="element title">
-                        <h1>Chess</h1>
-                    </div>
-                    <div class="element image">
-                        <a href="Chess/index.html">
-                            <img src="img/chess.png" alt="Meteo" class="screen">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="element description">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam repudiandae assumenda dolore fuga ipsum hic amet? Aliquid eaque, consectetur ducimus, officiis recusandae voluptatem blanditiis sint tempora expedita quaerat dicta?
-                    Molestias labore eligendi dolores in! Totam ad iure suscipit neque libero qui ex vel eum commodi assumenda, deserunt autem, itaque rerum vero quo laudantium, amet nemo? Voluptates obcaecati aut delectus.
-                    Animi molestiae officiis nobis est quo officia unde. Iste quod repellendus voluptatem laudantium tempora repellat quae molestias itaque consequatur veritatis nam rerum ratione enim, dolorum ipsa est laboriosam impedit nobis.
-                </p>
-            </div>
-        </div>
-        <div class="container horizontal">
-            <div class="element apercu">
-                <div class="container vertical">
-                    <div class="element title">
-                        <h1>DVD</h1>
-                    </div>
-                    <div class="element image">
-                        <a href="DVD/index.html">
-                            <img src="img/dvd.png" alt="Meteo" class="screen">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="element description">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam repudiandae assumenda dolore fuga ipsum hic amet? Aliquid eaque, consectetur ducimus, officiis recusandae voluptatem blanditiis sint tempora expedita quaerat dicta?
-                    Molestias labore eligendi dolores in! Totam ad iure suscipit neque libero qui ex vel eum commodi assumenda, deserunt autem, itaque rerum vero quo laudantium, amet nemo? Voluptates obcaecati aut delectus.
-                    Animi molestiae officiis nobis est quo officia unde. Iste quod repellendus voluptatem laudantium tempora repellat quae molestias itaque consequatur veritatis nam rerum ratione enim, dolorum ipsa est laboriosam impedit nobis.
-                </p>
-            </div>
-        </div>
-        <div class="container horizontal">
-            <div class="element apercu">
-                <div class="container vertical">
-                    <div class="element title">
-                        <h1>Pong</h1>
-                    </div>
-                    <div class="element image">
-                        <a href="Pong/index.html">
-                            <img src="img/pong.png" alt="Meteo" class="screen">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="element description">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam repudiandae assumenda dolore fuga ipsum hic amet? Aliquid eaque, consectetur ducimus, officiis recusandae voluptatem blanditiis sint tempora expedita quaerat dicta?
-                    Molestias labore eligendi dolores in! Totam ad iure suscipit neque libero qui ex vel eum commodi assumenda, deserunt autem, itaque rerum vero quo laudantium, amet nemo? Voluptates obcaecati aut delectus.
-                    Animi molestiae officiis nobis est quo officia unde. Iste quod repellendus voluptatem laudantium tempora repellat quae molestias itaque consequatur veritatis nam rerum ratione enim, dolorum ipsa est laboriosam impedit nobis.
-                </p>
-            </div>
-        </div>
+                Site inspiré de <a href="https://brittanychiang.com">brittanychiang.com</a>
+            </p>
+        </footer>
     </div>
 </body>
 </html>
