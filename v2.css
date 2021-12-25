@@ -127,16 +127,54 @@ main {
 .vertical {
     display: flex;
     flex-direction: row;
-}
-
-.part {
     padding: 100px;
 }
-
 
 .accueil {
     padding-top: 200px;
     padding-bottom: 300px;
+}
+
+.part {
+    padding: 20px;
+}
+
+.filtre {
+    position: absolute;
+    width: 200px;
+    opacity: 0.5;
+    z-index: 3;
+}
+
+.photo {
+    width: 200px;
+    position: absolute;
+    filter: grayscale();
+    z-index: 2;
+}
+
+.filtre:hover {
+    opacity: 0;
+}
+
+.filtre:hover + .photo {
+    filter: grayscale(0);
+}
+
+.carre {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: solid 3px #64ffda;
+}
+
+.filtre:hover ~ .carre {
+    margin-top: 15px;
+    margin-left: 15px;
+    transition: transform 0.25s ease-out;
 }
 
 .part p {
