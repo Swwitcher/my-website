@@ -390,8 +390,19 @@ footer a {
         font-size: 30px !important;
     }
 
+    .part h3 span {
+        margin-right: 10px;
+    }
+
     .part li {
         font-size: 40px !important;
+    }
+
+    .part li::before {
+        height: 16px;
+        width: 16px;
+        background-size: 16px;
+        margin-right: 16px;
     }
 
     .grille {
