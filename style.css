@@ -350,6 +350,10 @@ footer a {
         max-height: auto;
     }
 
+    .liste-sidenav li a img {
+        width: 64px;
+    }
+
     .liste-sidenav::before {
         width: 0px;
         height: 0px;
