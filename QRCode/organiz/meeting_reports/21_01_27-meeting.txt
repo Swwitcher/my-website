@@ -1,0 +1,77 @@
+											
+	-------------------------------------
+	|  Compte rendu du 27 Janvier 2021  |
+	-------------------------------------
+
+
+** Remarques générales / Git / Sources **
+
+    • Tout le monde doit faire des commits.
+    • Git propre -> branch pour laisser le master clean.
+    • Titre de commit explicite
+    • Faire attention à la propreté des commits (messages + contenu).
+    • Ne pas casser le projet en faisant un commit.
+    • Tous les documents doivent être en latex et les bibliographies en bibtex.
+    • Citer les sources, les licences...
+    • On a le droit de réutiliser du code existant.
+    • Pdp -> plus dans la démarche que le résultat "parfaitement fonctionnel",
+      il faut équilibrer tout, le code, la propreté, la réflexion en amont sur l'architecture et la structure.
+    • Réfléchir avant de coder.
+    • Être capable de justifier ses choix.
+    • Au final la note du client compte très peu dans la note -> ~10%
+      Donc il faudra surtout suivre les consignes de conduite de projets de M. Narbel.
+    • Ne pas hésiter à recontacter le client pour avoir des infos supplémentaires,
+      être sûrs d'être bien partis dans la bonne direction.
+      On a un client très occupé donc quand on a une réunion avec lui faut avoir un max de trucs à dire.
+    • Démo fonctionnelle à faire pour la première release donc plus tard dans le semestre.
+
+
+** Questions / Remarques du chargé de TD **
+
+    • Les qrcodes seront générés à la volée ou en avance ? 
+    • Combien de temps cela met pour générer un qrcode ?
+    • Quantifiez les performances des biblio en faisant des tests, combien de Qr codes à la minute en moyenne, etc...
+    • Est-ce un besoin fonctionnel ou non fonctionnel le temps mis ?
+      C'est non fonctionnel car seulement une contrainte de temps, si elle est importante il faudra voir avec le client,
+      lui donner notre moyenne de temps (qui varie en fonction des cas -> appli web, asynchrone, ajout d'autres temps supplémentaires...).
+    • Pourquoi vous avez choisi python et pas java ? J'ai vu que vous aviez testé ce langage mais qu'en est-il de java ?
+    
+
+** Cahier des besoins **
+
+    • Ne pas attendre la fin des cahiers des besoins pour écrire du code de test jetable (pas une version démo directement). (avant le 12 février)
+    • Sur le pdf les besoins 1: vous avez page 50 un détail de ce qui est attendu.
+    • Développer les possibilités d'extentions dans un coin.
+    • Dire dans le cahier des besoins qu'on a des idées dans le coin de la tête,
+      que c'est pas prioritaire pour le client et qu'il faudra s'y intéresser que quand on aura fini les demandes prioritaires.
+    • Expliquer pourquoi certaines solutions qui ont été écartées (contraintes de temps de dynamicité)
+    • Combien de temps ça prends de générer un qr code.
+    • Quels sont les besoins en performances (fonctionnel ou non fonctionnel? (contrainte de temps?)) 
+    • Besoin fonctionnel: génération d'un QrCode.
+    • Ajouter explication pour dire pourquoi on stockerai pas les QR codes.
+    • Comparatif python / Java --> justifier clairement nos choix de langages dans le cahier des besoins en pesant le pour et le contre pour chaque technologie proposée.
+
+
+** Prototypes / Tests de code **
+
+    • Voir combien de qr code on peut générer à la minute (quantifier la performance).
+    • Séquences de qr code (flux, gif...).
+    • Taux de rafraichissement.
+    • Exemple : Changement de qr code en fonction des heures.
+    • Le but ce n'est pas de faire une démo, c'est de faire des prototypes jetables.
+      Des petits bouts de code qui contiennent certaines fonctionnalités pour tester les performances (temps et espace occupé) pour garantir qu'on est sur le bon chemin.
+
+
+** Pour la semaine prochaine **
+
+    • Creuser un peu plus sur les besoins fonctionnels et non fonctionnels. (s'aider des slides de cours de M. Narbel).
+    • Voir avec le client pour la problématique du temps de génération d'un QRcode, voir si cela peut être une nouvelle contrainte.
+    • Préciser avec le client ses attentes pour la partie php & js.
+
+    • Ce qui est IMPORTANT à développer pour le moment:
+       - La partie besoin du cahier des besoins.
+       - Définir les besoins liés à l'interface.
+       - Partie conception (notre III) doit découler des besoins,
+         qui ne sont pas assez approfondis (on arrive trop "brutalement" sur les requêtes web, etc.. sans préciser pourquoi précisément).
+       - Préciser ce qu'attend le client -> voir avec lui pour approfondir certains points encore vagues.
+       - Langages : besoins non fonctionnels

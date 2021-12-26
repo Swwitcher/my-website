@@ -1,0 +1,6 @@
+*.png
+*.json
+*.lock
+
+!backEnd/expired_qrcode.png
+!backEnd/error_qrcode.png

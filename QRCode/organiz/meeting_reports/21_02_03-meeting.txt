@@ -1,0 +1,41 @@
+											
+	-------------------------------------
+	|  Compte rendu du 03 Février 2021  |
+	-------------------------------------
+
+
+** Cahier des besoins **
+
+• Intro/Définitions:
+    Parler du niveau de correction d'un QRcode et des différentes tailles.
+
+• Compléter les définitions, en particulier :
+    - QRcode : Combinaisons de carré particuliers + Rajouter une image ou dire que celle sur la page de présentation est un QRcode.
+    - Contenu d'un qr code: Qu'est-ce qu'on peut stocker? (plus précisément).
+      Quantité d'informations qu'on peut stocker
+
+• Le tableau des différentes utilisations d'un QRcode est à remonter plus haut dans le rapport. 
+
+• L'existant :
+    Tout ce qui a un rapport avec le projet, pas forcément le pseudo-code du prof mais aussi les projets déjà existants qui ressemblent au notre, etc...
+
+• Utilisation de Java ou Python : Pas un besoin fonctionnel (plus lié à une contrainte).
+
+• Les besoins sont mals nommés (trop longs et pas super compréhensibles).
+
+• Schémas:
+    - Même base de numérotation pour le mode standalone et le mode web.
+    - Préciser quel schéma correspond à quoi, lequel est prioritaire pour le projet.
+    - L'objectif final c'est celui qui est à gauche.
+      L'intermédiaire c'est le mode standalone.
+
+• Il faut mettre les tests effectués dans le cahier des besoins + explications + limitations
+
+• Le reste c'est plus une histoire de rédaction, il faut bien structurer le cahier des besoins.
+
+
+** Autres informations **
+
+On risque de ne pas avoir de retour de notre client avant le rendu du cahier des besoins. 
+Il faudra donc faire sans, en le disant dans l'intro. Cela implique donc de devoir 
+préciser que certaines idées ne sont pas entièrement validées par le client.

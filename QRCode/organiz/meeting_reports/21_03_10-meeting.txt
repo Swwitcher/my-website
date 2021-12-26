@@ -1,0 +1,13 @@
+ttl dans json string ???
+essayer caractere qui ne fonctionne pas sur le script java
+
+Generation_QR_code.py :
+laisser toSVG en commentaire : expliquer avec un commentaire pourquoi 
+expliquer ce qui se passer avec None en parametre
+
+analyseur statique de code python : pep 8 / pylint
+
+Presentation :
+Screen de l'affichage standalone (avec le bouton déroulé)
+Lien entre lib qu'on utilise et notre code
+Si chrono trop long : "On a fait ça, mais on se focalise sur ça"

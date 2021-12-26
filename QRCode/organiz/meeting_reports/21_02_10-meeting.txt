@@ -1,0 +1,33 @@
+											
+	-------------------------------------
+	|  Compte rendu du 10 Février 2021  |
+	-------------------------------------
+
+
+** Cahier des besoins modifications à apporter **
+
+• Termes pas beaux à modifier :
+    - Changer terme "fichier de configuration".
+    - Scannable depuis un smartphone (et pas un téléphone).
+
+
+• Définitions :
+    - Expliquer l'utilité des 3 coins d'un QR Code dans les définitions (= à savoir dans quel sens lire le QR).
+
+• Scénarios :
+    - D'après les infos du client mais sans avoir de reponse definitive : *scenarios*
+    - Pour les scénarios montrer sur le schéma où le client intervient.
+    - Schéma 2ème scénario "l'exploitant" mettre différement et peut-être le mettre dans les schémas d'avant.
+
+• Schémas :
+    - Il manque un schéma sur les intervenants sur notre système :
+      -> celui qui voit la page web.
+      Et dire qu'on s'occupe de celui qui écrit le plugin et/ou la page web.
+
+• Les approches :
+    - Avantage/inconvénient dans la présentation de chaque méthode ?
+
+• Tests :
+    - Mieux expliquer ce qu'on cherche à montrer.
+    - Dans les test réexpliquer ce qu'est la version 40.
+    - Dire "on est plutôt dans ce cas donc on choisit ce langage".
