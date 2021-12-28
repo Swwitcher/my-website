@@ -147,65 +147,70 @@ main {
     grid-gap: 15px;
 }
 
-.grille-item {
+.carte-link {
+    text-decoration: none;
+}
+
+.carte {
     width: 300px;
     height: 300px;
     border-radius: 3px;
     background-color: #112240;
     box-shadow: 5px 10px 5px #051326;
+    display: grid;
+    grid-template: repeat(2, 50px) 150px 50px / 9px repeat(3, 94px) 9px;
 }
 
-.grille-item img {
-    margin-top: 10px;
-    margin-left: 258px;
+.carte:hover {
+    margin-top: -5px;
+}
+
+.icon {
+    grid-area: 1 / 4 / 2 / 5;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.icon img {
     width: 32px;
 }
 
-.grille-item a {
-    text-decoration: none;
+.titre {
+    grid-area: 2 / 2 / 3 / 5;
+    display: flex;
+    justify-content: left;
+    align-items: top;
     color: #ccd6f6;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.grille-item a:hover {
-    color: #64ffda;
+.description {
+    grid-area: 3 / 2 / 4 / 5;
+    display: flex;
+    justify-content: justify;
+    align-items: top;
+    color: #8892b0;
+    font-size: 16px;
 }
 
-.noclick {
-    pointer-events: none;
-    cursor: default;
-    visibility: hidden;
+.outils {
+    grid-area: 4 / 2 / 5 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nolink {
-    pointer-events: none;
-    cursor: default;
-    color: #ccd6f6;
-}
-
-.grille-item h1 {
-    margin-top: 0px;
-    margin-left: 15px;
-    font-size: 20px !important;
-}
-
-.grille-item p {
-    margin-left: 15px;
-    font-size: 16px !important;
-}
-
-.grille-item li {
-    display: inline !important;
-    margin: 5px;
+.outils li {
+    display: inline;
     color: #677291 !important;
+    font-size: 16px;
 }
 
-.grille-item li::before {
+.outils li::before {
     background-image: none !important;
     margin-right: 0px !important;
-}
-
-.grille-item:hover {
-    margin-top: -5px;
 }
 
 .accueil {
@@ -422,32 +427,28 @@ footer a {
         grid-gap: 30px;
     }
 
-    .grille-item {
+    .carte {
         width: 600px;
         height: 600px;
-        border-radius: 3px;
-        background-color: #112240;
+        border-radius: 6px;
         box-shadow: 10px 20px 10px #051326;
+        grid-template: repeat(2, 100px) 300px 100px / 18px repeat(3, 188px) 18px;
     }
-
-    .grille-item img {
-        margin-top: 20px;
-        margin-left: 512px;
+    
+    .icon img {
         width: 64px;
     }
-
-    .grille-item h1 {
-        font-size: 40px !important;
+    
+    .titre {
+        font-size: 40px;
     }
-
-    .grille-item p {
-        margin-left: 15px;
-        font-size: 32px !important;
+    
+    .description {
+        font-size: 32px;
     }
-
-    .grille-item li {
-        margin: 10px;
-        font-size: 32px !important;
+    
+    .outils li {
+        font-size: 32px;
     }
 
     footer {
