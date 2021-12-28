@@ -1,0 +1,102 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.carte {
+    display: grid;
+    grid-template: 20px 260px 40px 60px 40px 1px 9px 50px 20px / 20px 130px 10px 130px 20px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 310px;
+    height: 500px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.image {
+    grid-area: 2 / 2 / 3 / 5;
+    background: url(nft-preview-card-component-main/images/image-equilibrium.jpg);
+    background-size: 100%;
+    background-position: 50% 50%;
+    border-radius: 5px;
+}
+
+.titre {
+    grid-area: 3 / 2 / 4 / 5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.description {
+    grid-area: 4 / 2 / 5 / 5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.prix {
+    grid-area: 5 / 2 / 6 / 3;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+
+.days {
+    grid-area: 5 / 4 / 6 / 5;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+
+.icon {
+    padding-right: 5px;
+}
+
+.separateur {
+    grid-area: 6 / 2 / 7 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(215, 32%, 27%);
+    border: solid 1px;
+}
+
+.createur {
+    grid-area: 8 / 2 / 9 / 5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+.avatar {
+    width: 32px;
+    border-radius: 32px;
+    border: solid 1px hsl(0, 0%, 100%);
+    
+}
+
+.createur span {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    margin: 0px 8px 0px 10px;
+}
